@@ -1,4 +1,4 @@
 [submodule "massa-proto"]
 	path = massa-proto
 	url = https://github.com/massalabs/massa-proto.git
-    branch = main
+    branch = improve_datastore_keys_query
