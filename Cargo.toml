@@ -15,16 +15,17 @@ include = ["api.bin"]
 name = "massa_proto_rs"
 
 [dependencies]
-prost = { version = "=0.12", default-features = false, features = [
+prost = { version = "=0.13", default-features = false, features = [
     "prost-derive",
 ] }
-prost-types = { version = "=0.12", default-features = false }
-tonic = { version = "=0.10", optional = true }
+prost-types = { version = "=0.13", default-features = false }
+tonic = { version = "=0.12", optional = true }
 
 [build-dependencies]
 glob = "0.3"
-prost-build = "0.12"
-tonic-build = "0.10"
+prost-build = "0.13"
+tonic-build = "0.12"
+tower-service = "0.3.3"
 
 [features]
 tonic-build = []
